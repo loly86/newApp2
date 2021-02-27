@@ -5,6 +5,7 @@
       <h1 class="title">
         newApp2
       </h1>
+      <test />
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -28,9 +29,16 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Logo from '~/components/Logo.vue'
+import test from '~/components/organisms/test.vue'
 
-export default Vue.extend({})
+
+export default {
+  components: {
+    Logo,
+    test,
+  },
+}
 </script>
 
 <style>
